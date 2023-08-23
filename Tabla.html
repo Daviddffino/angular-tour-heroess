@@ -1,1 +1,116 @@
-Tabla:
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Enlace a Bootstrap CSS (asegúrate de tener una conexión a internet para cargar el CSS) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilo para la tabla con filas alternas */
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: #f2f2f2; /* Color para las filas pares */
+    }
+
+    /* Estilos adicionales de tablas */
+    .table-bordered {
+      border: 2px solid #3498db; /* Borde sólido */
+    }
+
+    .table-hover tbody tr:hover {
+      background-color: #dcdcdc; /* Color de fondo al pasar el cursor */
+    }
+
+    .table-dark {
+      background-color: #333; /* Fondo oscuro para la tabla */
+      color: white; /* Texto en color blanco */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <!-- Tabla con filas alternas -->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+      <tr>
+        <td>Dato 3</td>
+        <td>Dato 4</td>
+      </tr>
+      <tr>
+        <td>Dato 5</td>
+        <td>Dato 6</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Tabla con borde -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Encabezado A</th>
+        <th>Encabezado B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dato A1</td>
+        <td>Dato B1</td>
+      </tr>
+      <tr>
+        <td>Dato A2</td>
+        <td>Dato B2</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Tabla con efecto hover -->
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Encabezado X</th>
+        <th>Encabezado Y</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dato X1</td>
+        <td>Dato Y1</td>
+      </tr>
+      <tr>
+        <td>Dato X2</td>
+        <td>Dato Y2</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Tabla con fondo oscuro -->
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Encabezado Z</th>
+        <th>Encabezado W</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dato Z1</td>
+        <td>Dato W1</td>
+      </tr>
+      <tr>
+        <td>Dato Z2</td>
+        <td>Dato W2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
