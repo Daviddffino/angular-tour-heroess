@@ -20,3 +20,34 @@
     </li>
   </ul>
 </div>
+
+<div class="heroes-list">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nombre del Héroe</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hero-item">
+        <td>Heroe 1</td>
+        <td>
+          <button class="style-button" (click)="applyStyle('red', '10px')">Aplicar Estilo</button>
+        </td>
+      </tr>
+      <tr class="hero-item">
+        <td>Heroe 2</td>
+        <td>
+          <button class="style-button" (click)="applyStyle('blue', '5px')">Aplicar Estilo</button>
+        </td>
+      </tr>
+      <tr class="hero-item">
+        <td>Heroe 3</td>
+        <td>
+          <button class="style-button" (click)="applyStyle('green', '8px')">Aplicar Estilo</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
