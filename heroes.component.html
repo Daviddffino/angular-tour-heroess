@@ -51,3 +51,17 @@
     </tbody>
   </table>
 </div>
+
+<div class="heroes-list">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let hero of heroes">
+      <div class="card hero-card">
+        <img [src]="hero.image" class="card-img-top" alt="Imagen del héroe">
+        <div class="card-body">
+          <h5 class="card-title">{{ hero.name }}</h5>
+          <button class="style-button" (click)="applyStyle('red', '10px')">Aplicar Estilo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
