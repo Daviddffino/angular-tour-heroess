@@ -25,3 +25,48 @@
 
 </body>
 </html>
+
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-heroes',
+  templateUrl: './heroes.component.html',
+  styleUrls: ['./heroes.component.css']
+})
+export class HeroesComponent {
+  heroes = [
+    { name: 'Héroe 1', image: 'URL_IMAGEN_HEROE_1' },
+    { name: 'Héroe 2', image: 'URL_IMAGEN_HEROE_2' },
+    { name: 'Héroe 3', image: 'URL_IMAGEN_HEROE_3' }
+    // Agrega más héroes aquí
+  ];
+
+  applyStyle(color: string, borderRadius: string) {
+    const heroItems = document.querySelectorAll('.hero-item');
+    heroItems.forEach(item => {
+      item.style.borderColor = color;
+      item.style.borderRadius = borderRadius;
+    });
+  }
+}
+
+.heroes-list {
+  margin: 20px;
+}
+
+.hero-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.style-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
